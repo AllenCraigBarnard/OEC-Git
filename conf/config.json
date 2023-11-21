@@ -1,0 +1,29 @@
+{
+  "apiKey": "08301ca5-267a-4d45-a60d-85c01817bebe",
+  "baseUrl": "https://api.opsgenie.com",
+  "logLevel": "DEBUG",
+ 
+  "actionMappings": {
+    "Create": {
+      "filepath": "C:\\opsgenie\\opsgenie-oec\\scripts\\actionExecutor.py",
+      "sourceType": "local",
+      "env": [
+        "e1=v1",
+        "e2=v2"
+      ],
+      "stdout": "C:\\opsgenie\\opsgenie-oec\\output\\output.txt"
+    }
+  },
+  "pollerConf": {
+    "pollingWaitIntervalInMillis": 100,
+    "visibilityTimeoutInSec": 30,
+    "maxNumberOfMessages": 10
+  },
+  "poolConf": {
+    "maxNumberOfWorker": 12,
+    "minNumberOfWorker": 4,
+    "monitoringPeriodInMillis": 15000,
+    "keepAliveTimeInMillis": 6000,
+    "queueSize": 0
+  }
+}
